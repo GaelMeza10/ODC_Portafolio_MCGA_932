@@ -32,7 +32,7 @@ _start:
 
     ; Imprimir el número (resultado almacenado en 'res')
     mov eax, [res]    ; Cargar el resultado en EAX
-    add eax, '0'      ; Convertir el número en carácter (ASCII)
+    add eax, 'N'      ; Convertir el número en carácter (ASCII)
     mov [res], eax    ; Almacenar el carácter convertido ;SE SUMA 30+48, 48 porue es el codigo ascii del 0)
     mov eax, 4        ; Syscall para escribir
     mov ebx, 1        ; Usar la salida estándar
